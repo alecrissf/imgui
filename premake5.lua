@@ -3,7 +3,7 @@ project "ImGui"
     language "C++"
     staticruntime "off"
 
-    location ("build/projects/" .. _ACTION)
+    location ("build/projects/" .. _ACTION .. "/%{prj.name}")
     targetdir ("build/bin/" .. outputdir .. "/%{prj.name}")
     objdir ("build/obj/" .. outputdir .. "/%{prj.name}")
 
