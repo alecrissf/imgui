@@ -3,9 +3,9 @@ project "ImGui"
     language "C++"
     staticruntime "off"
 
-    location ("build/projects/" .. _ACTION .. "/%{prj.name}")
-    targetdir ("build/bin/" .. outputdir .. "/%{prj.name}")
-    objdir ("build/obj/" .. outputdir .. "/%{prj.name}")
+    location ("%{rootdir}/%{projdir}/" .. _ACTION .. "/%{prj.name}")
+    targetdir ("%{rootdir}/%{builddir}/bin/" .. outputdir .. "/%{prj.name}")
+    objdir ("%{rootdir}/%{builddir}/obj/" .. outputdir .. "/%{prj.name}")
 
     files
     {
